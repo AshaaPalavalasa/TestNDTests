@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- <suite name="SampleSuite" thread-count="2" parallel="tests">-->
+<suite name="SampleSuite">
+<parameter name="browser" value="chrome"></parameter>
+
+  <!--<test name="ModuleOneTest">
+    <classes>
+      <class name="TestScripts.GooglePage"/>
+      <class name="TestScripts.NewSearch"/>
+      <class name="TestScripts.SampleThree"/>
+      <class name="ParallelScripts.SampleOne"/>
+      <class name="ParallelScripts.SampleTwo"/>
+    </classes>
+  </test>--> <!-- ModuleOneTest --> 
+  <!--<test name="ModuleTwo">
+  	<classes>
+  		<class name="TestScripts.SampleThree"/>
+  	</classes>
+  </test>-->
+
+  <test name="ModuleThree">
+  <classes>
+  		<class name="TestScripts.LoginPage"/>
+  	</classes>
+  </test>
+  
+</suite> <!-- SampleSuite -->
+
+<!--  Grouping
+  <groups> 
+  <define name="PhaseOne">
+  <include name="FirstRequirement"></include>
+  <include name="SecondRequirement"></include>
+  </define>
+  <define name="PhaseTwo">
+  <include name="ThirdRequirement"></include>
+  </define>
+  <run>
+  <include name="PhaseTwo"></include>
+  </run>
+  </groups>-->
