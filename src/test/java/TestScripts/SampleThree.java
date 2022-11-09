@@ -12,6 +12,7 @@ public class SampleThree {
   public void SearchCypress() {
 	  long id=Thread.currentThread().getId();
 	  System.out.println("Cypress"+id);
+	  System.out.println("Modified for GitHub Intergartion");
   }
   @Test(groups="ThirdRequirement")
   public void SearchCucumber() {
